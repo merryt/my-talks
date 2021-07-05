@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>How responsive effected web design: Why Photoshop is no longer the un-protested king of the roost</title>
+
+		<meta name="description" content="A quick talk about the state of webdesign">
+		<meta name="author" content="Tyler Merry">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+		// <script>
+		// 	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		// </script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>How responsive effected web design</h1>
+					<h3>Why Photoshop is no longer the un protested king of the roost</h3>
+				
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>About me</h2>
+						<p>My name is <a href="http://www.tymerry.com">Tyler Merry</a></p>
+						<p class="fragment"> follow the presentations <a href="tymerry.com/rwdSlides">tymerry.com/rwdSlides</a></p>
+						<p class="fragment"> follow the presenter <a href="http://twitter.com/tyler_merry">@tyler_merry</a></p>
+						<aside class="notes">
+							
+						</aside>
+					</section>
+					<section>
+						<h2>a little more about me</h2>
+						<br/>
+						<h3> I have worked for a couple companies...</h3>
+						<img class="fragment" src="http://assets.bizjournals.com/denver/blog/boosters_bits/Convercent%20logo*304.jpg?v=1" height="150px"/>
+						<img class="fragment" src="http://robrozicki.files.wordpress.com/2010/02/logo-vail-h.jpg" height="150px" />
+						<img class="fragment" src="http://ww1.prweb.com/prfiles/2011/02/15/8545292/quark_logo%20big.jpg" height="150px" />
+						<aside class="notes">
+							
+							Convercent = we help people stop bad things from happening in their company...
+							<br />
+							..Vail resorts where I redid the ui for the Breckenridge and Heavenly websites
+							<br />
+							Quark... I know what your are thinking... quark? they are still around... to answer you, YES... they are alive and rocking right here in Denver, so if you are looking for a reason to kick me out, " no ex quark employees aloud" is as probably as good as any
+						</aside>
+					</section>
+
+					<section>
+						<h2>What do you do in your free time?</h2>
+						<br/>
+						
+						<img class="fragment" src="lib/img/r.jpg" height="300" />
+						<img class="fragment" src="http://dribbble.s3.amazonaws.com/users/37157/screenshots/558348/dribbb.png" height="300" />
+						
+						<aside class="notes">
+							Reflexionyoga.com - In my free time I started a yoga site with a friend, you can find it at reflexionyoga.com,	
+							<br />
+							DenverBrews.com - I am also starting a site that does beer reviews... mostly I got the domain name, and made a cool logo, now I am pretty much trapped finishing 
+						</aside>
+					</section>
+				</section>
+
+				<!-- About the talk! -->
+
+				<section>	
+					<section>
+						<h1>About the talk!</h1>
+					</section>		
+					<section>
+						<h3>This isn't a talk about RWD</h3>
+						<br/>
+						<h2 class="fragment" data-fragment-index="1">It is about Designing for responsive web design...</h2>
+						<br/>
+						<p class="fragment" data-fragment-index="2"><small>sponsored by the</small></p>
+						<h3 class="fragment" data-fragment-index="2"> department of redundancy department</h3>
+						<aside class="notes">
+						I don't want to do anouther talk about RWD, and how its here to save the internet, etc etc...
+						<br />
+
+						This is a talk about how to DESIGN for responsive web design...
+						<br />
+
+						rightly so its brought to you by the department of redundancy department
+						</aside>
+					</section>
+				</section>
+
+
+
+				<section>
+					<section>
+						<h1>Traditional Design</h1>
+						<aside class="notes">
+							- every one is different
+							- each person has their own design process
+							- this was mine, before responsive design
+							- I think its kinda similar to most peoples
+						</aside>
+					</section>
+		
+					<section>
+						<h2>Fire up Photoshop</h2>
+						<br />
+						<img class="fragment" src="http://blog.main.wattsdigital.com/wp-content/uploads/2012/06/PS-CS6-Icon_Web.jpg"/>						
+						<aside class="notes">
+							my first step fire up some Photoshop, 
+							<br />
+							as its loading I always have such good intentions, 
+							<br />
+								- this will be the project I do with all the coolest webstuff... 
+								<br />
+								- I will be so happy with it...
+								<br />
+								- I will win awards, and people will give me free cool ranch direto tacos
+								<br />
+							then i get to this screen (next slide)
+						</aside>
+					</section>
+					<section>
+						<img src="http://b27.cc.trincoll.edu/weblogs/sta/Photoshop10ImageSize.jpg" />
+						<aside class="notes">
+							- then it hit me... crap... what is the size we make websites?!
+						</aside>
+					</section>
+					<section>
+						<img src="http://filterfine.com/wp-content/uploads/2008/10/960grid.jpg" />
+						<aside class="notes">
+							enter 960 grid
+						</aside>
+					</section>
+					<section>
+						<h2>Grids are go!</h2>
+						<img src="http://images.sixrevisions.com/2010/01/12-04_960grid.jpg" />
+						<h3 class="fragment">now what?</h3>
+						<aside class="notes">
+							with all its photoshoping templeting goodness
+							<br />
+							ahh, the classic blank canvas designers block ... everyone has their way to overcome, I personaly liked to look at other peoples things and grab small elements I liked and combine them... so yea... steal
+						</aside>
+					</section>
+					<section>
+						<h2>time to get "inspired"</h2>
+						<img class="fragment" src="http://designshack.net/images/designs/inspiredology.jpg" width="400"/>
+						<img class="fragment" src="http://typophile.com/files/dribbble_logo_4475.jpg" width="400"/>
+						<img class="fragment" src="http://blog.creonomy.com/wp-content/uploads/2012/10/awwwards-logo1.jpeg" width="400"/>
+						<img class="fragment" src="http://www.dereckjohnson.co.uk/wp-content/uploads/2010/01/building-wireframe06.jpg" width="400"/>
+						<aside class="notes">
+							so everyone has their spots for inspirations... 
+								<br />
+								friday fix on inspiredology? 
+								<br />
+								dribbble
+								<br />
+								awwwards
+								<br />
+								after a while you realize maybe I should start drawing something
+						</aside>
+					</section>
+					<section>
+						<h2>Pixel perfect design</h2>
+						<img class="fragment" src="http://cheerapp.pogoking.net/wp-content/uploads/2012/03/pixel-perfect-design.png" width="400px"/>
+						<img class="fragment" src="http://i.imgur.com/miUuD.jpg" width="525px"/>
+						
+						<aside class="notes">
+							okay so we are moving now, we have our layout, ux, and ui...
+							we are working at it, pixel by pixel, making sure everything is perfect... when you finaly get everything perfect, 
+							BAM!! post that on dribbble... and hop on this bike...
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Incomes responsive web design!</h1>
+						<aside class="notes">
+							Now for the mix up!
+						</aside>
+					</section>
+					<section>
+						<h2>Wait... what is responsive web design?</h2>
+						<aside class="notes">
+							Responsive web design is a pretty lofty term...
+							Wikipedia defines RWD as
+							Web design approach aimed at crafting sites to provide an optimal viewing experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones).
+						</aside>
+					</section>
+					<section>
+						<h2>What made up the web pre-RWD?</h2>
+						<img class="fragment" src="http://i.i.com.com/cnwk.1d/sc/20786732-2-440-overview-1.gif" />
+						<aside class="notes">
+							This is what the web use to be, on an old desktop computer just like this. it was around a 1024x768... or 1400x1050... or 800x600... what ever the size was we thought 960px was the perfect size for our websites and life was good! btw I started making and consuming websites on this computer. as soon as we get 960 dialed in new devices start to enter the picture
+						</aside>
+					</section>
+					<section>
+						<h2>What make up the web now?</h2>
+						<img class="fragment" src="http://www.prepaymania.co.uk/blog/wp-content/uploads/2012/12/Mobile-Phones.jpg" width="300" />
+						<img class="fragment" src="http://cdn3.pcadvisor.co.uk/cmsdata/features/3416876/Best_tablets.jpg" width="300" />
+						<img class="fragment" src="http://www.google.com/intl/en/chrome/assets/common/images/devices/devices-selector-ss-cb.jpg" width="300" />
+						<img class="fragment" src="http://i.zdnet.com/blogs/macbook-pro-retina-display-ogrady.jpg" width="300" />
+						<img class="fragment" src="http://niche-macworld-production.s3.amazonaws.com/wp-content/uploads/2010/11/27in-LED-Cinema-Display-1.jpg" width="300" />
+						<img class="fragment" src="http://i.i.com.com/cnwk.1d/sc/20786732-2-440-overview-1.gif" width="300" />
+
+						<aside class="notes">
+							phone
+							tablets
+							mini laptops
+							hd laptops
+							mega screens with a gillion pixels
+							o yea... and that same old computer
+
+							this is the web now... we still don't know exactly what to do about it, do we build native apps? do we build mobile versions of the site? do we go responsive? do we just ignore the problem? ... the joy of going responsive is we build our sites for a couple sizes, and all of a suddon we are prepaired for our fringe use cases.
+						</aside>
+					</section>
+
+					<section>
+						<h2>What make up the web in the future?</h2>
+						<img class="fragment" src="http://www.blogcdn.com/www.engadget.com/media/2011/01/cruzwatch01102011.jpg" width="400" />
+						<img class="fragment" src="http://www.nintendo-nation.net/wp-content/uploads/2012/09/Wii-U-browser-2.png" width="400" />
+						<img class="fragment" src="http://www.gogi.in/wp-content/uploads/2011/04/samsung-smart-tv-browser.jpg" width="400" />
+						
+
+
+						<aside class="notes">
+					
+							watch
+							game consoles
+							smart tv
+							and of course all the things we have now.
+
+							all these things exists but we don't credit it for being the web. This creates huge problems, because if you are building native apps, or device spesific sites...all of a sudon we need to have a car app, and a game console app, and a smart tv app... 
+
+							- each of these could run their own os, or have their own mobile interface, when we are designing we can't plan for everything to fit in side our own box...
+						</aside>
+					</section>
+					<section>
+						<h2>What make up the web in the future?</h2>
+						<img class="fragment" src="http://images.smh.com.au/2010/01/25/1065132/lg-internet-fridge-420x0.jpg" width="300" />
+						<img class="fragment" src="http://www.bmwblog.com/wp-content/uploads/thumb-P0043295.JPG" width="300" />
+						<img class="fragment" src="http://www.estarling.com/Imagesv2/Big/iFrame_1.png" width="300" />
+
+						<aside class="notes">
+							fridge
+							car browser
+							picture frame
+							
+							- add things that are a bit outside of that (refrigerators, paintball guns, door locks, alarm clocks, and AC units and a ton of question marks) 
+
+							- crazy things are coming in the future, and chances are EVERYTHING will connect to the INTERNET. and if we don't get ahead of them we will always be placed on the reactive position...
+						</aside>
+					</section>
+
+					<section>
+						<h2>so, why its good for designers?!</h2>
+							<ul>
+								<li class="fragment">Does that mean things are more confusing? </li>
+								<li class="fragment">Does that mean more work? </li>
+								<li class="fragment">So why do we like this? 
+									<ul>
+										<li class="fragment">Greater Impact</li>
+										<li class="fragment">On a whole less work</li>
+									</ul>
+								</li>
+
+							</ul>
+
+						<aside class="notes">
+
+							This makes things more confusing, and over all more daunting... we don't want to have to rewrite for every new app that comes out, we want the things we make now to work on devices coming out next Christmas!
+
+
+							Why is this good for designers? doesn't that just mean more work? sadly it does mean more work, but it also means we get to design for the future through responsive and adaptive webdesign, making us and our work more impactful and valuable.
+
+						</aside>
+					</section>
+					<section>
+						<h2>Ups and downs of responsive</h2>
+						<img src="http://asset3.cbsistatic.com/cnwk.1d/i/ne/p/2004/treo650_340x719.jpg" height="500"/>
+						<img src="http://images.macworld.com/images/article/2012/06/original-iphone-285637.jpg" height="500"/>
+
+						<aside class="notes">
+							show original iphone, a treo 650, and another old phone...
+							
+							Original devices where slow as shit
+								treo 650
+									312 MHz
+									32mb ram
+									320 x 320 pixels
+
+								iphone
+									- original iphone 413 mhz
+									- 128mb ram
+									- 320x480 resolution
+
+							Bad connections
+								- network speeds are still not super fast... but man... could you imagine...
+								- 70 to 150 kbps was great on edge original
+							
+							with bad hardware and bad networks...
+							
+							These limitations forced the original creators of mobile websites to start making decisions about what people wanted. we knew that if people had to wait on all the features of the full site it would take for every, so we started cutting things out... and in the original sites we ended up delivering a cold bottle of 
+							
+						</aside>
+					</section>
+					<section>
+						<img src="lib/img/weblite.png" alt="">
+						<aside class="notes">
+							web lite --- (same-ish taiste)  half the features
+
+							- we learned from those original experiences that people don't want all their options yanked away
+
+							-  which is really scary because according to compuware "57 percent of consumers will not recommend a business with a poorly designed mobile site.
+
+							- Similarly, 40 percent of consumers will go to a competitor’s site after a bad mobile experience"
+
+						</aside>
+					</section>
+					<section>
+						<h2>How its disrupting our old workflows</h2>
+							<p class="fragment">960px...</p>
+							<p class="fragment">"normal" size</p>
+							<p class="fragment">"normal" pixel density</p>
+
+						<aside class="notes">
+							- we can no longer just design to 960, we now need to build out styles for large monitors, "normal" desktops, laptops, netbooks, tablets, phones, and all at different pixel densities.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>How the Internet community is responding</h1>
+					</section>
+					<section>
+						<img src="http://www.dipoll.com/img/polls/511A.jpg" />
+						<p class="fragment"> Does anyone actively do RWD?</p>
+						<p class="fragment"> What is your process?</p>
+					</section>
+					<section>
+						<h2>the process</h2>
+						<p>design → front-end → back-end</p>
+						<hr>
+						<p class="fragment">design<span class="light"> → front-end → back-end</span></p>
+						<p class="fragment"><span class="light">design → </span>front-end<span class="light"> → back-end</span></p>
+						<p class="fragment"><span class="light">design → front-end → </span>back-end</p>
+						<p class="fragment">design → front-end → back-end</p>
+						<h3 class="bold fragment">design → front-end <span class="light">→ back-end</span></h3>
+					</section>
+					<section>
+						<h1>THE NEW PROCESS!</h1>
+					</section>
+					<section>
+						<h2>Wireframes on paper!</h2>
+						<img src="http://images.sixrevisions.com/2010/10/28-36_sketchedwireframe.jpg" />
+						<aside class="notes">
+							- get back to paper, its quick, easy, and most of the time not as distracting
+							- the goal is to get to the browser quickly. 
+						</aside>
+					</section>
+					<section>
+						<h2>Get your mind moving</h2>
+						<h3>With concepts not with pixel perfect designs</h3>
+						<img src="http://cl.ly/O7Um/logoIdea.png" />
+						<p>600px by 600px</p>
+						<p>Mood boards</p>
+						<p class="fragment"><a href="tymerry.com/responsive">tymerry.com/responsive</a></p>
+						<aside class="notes">
+							- goal: get an idea together
+							
+							- draw some shapes, play with some colors
+						
+							- use some patterns 
+								- subtle patterns 
+						</aside>
+					</section>
+					<section>
+						<h2>To the browser</h2>
+						<h2>quickly!</h2>
+						<blockquote class="fragment">Lets change designing in the browser to deciding in the browser.</blockquote>
+						<p class="fragment"> - Dan Mall</p>
+						<br />
+						<p class="fragment">Mobile first!</p>
+						<p class="fragment">Responsive Frameworks!</p>
+						<aside class="notes">
+							- "Lets change designing in the browser to deciding in the browser" - Dan Mall
+
+							- Mobile first!
+								- start from the bottom and work your way up!
+							- Responsive Frameworks!
+								- there are SOOO many responsive frameworks right now, so if you don't feel like making your own media querys they can be pretty helpful. I encourage everyone to play with "twitter bootstrap" or "foundation"
+
+						</aside>
+					</section>	
+					<section>
+						<h2>Avoiding frameworks?</h2>
+						<p class="fragment">Let content rule!</p>
+						<p class="fragment">Start mobile, add breaks when you think it feels right</p>
+						<aside class="notes">
+							- if you want to be adventurous and write css yourself and avoid frameworks, break where it feels natural (what i did for tymerry.com/responsive)
+						</aside>
+					</section>
+					<section>
+						<h2>design local</h2>
+						<img src="http://shirtoid.com/wp-content/uploads/2009/05/no-place.jpg"  height="300"/>
+						<img class="fragment" src="http://b.vimeocdn.com/ps/339/33971_300.jpg" height="300"/>
+						<img class="fragment" src="https://twimg0-a.akamaihd.net/profile_images/1607305508/Ruby_on_Rails.jpg" height="300"/>
+						<aside class="notes">
+							design local -
+								mamp, rails, lamp, etc
+						</aside>
+					</section>
+					<section>
+						<h2>The code editor is your friend</h2>
+							<ul>
+								<li class="fragment">Dreamweaver CS6
+									<ul>
+										<li class="fragment">Fluid Grid Layout</li>
+									</ul>
+								</li>
+								<li class="fragment">Sublime Text 2
+									<ul>
+										<li class="fragment">Emmet</li>
+										<li class="fragment">Live Reload</li>
+									</ul>
+								</li>
+								<li class="fragment">Debugging
+									<ul>
+										<li class="fragment">Color Trick</li>
+									</ul>
+								</li>
+							</ul>
+							
+
+						<aside class="notes">
+							- dreamweaver cs6 (http://tv.adobe.com/watch/creative-week-how-tos/dreamweaver-cs6-for-responsive-design/)
+								- TYLER DO THIS TUTORIAL --- http://www.adobe.com/inspire/2012/08/fluid-grid-layouts-dreamweaver-cs6.html
+								- OR THIS ONE --- http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-dreamweaver-cs6-fluid-grids/
+							- sublime text 2 (if your hardcore)
+								- Emmet
+							- Debugging
+								- change the BG color depending on the background
+									- https://speakerdeck.com/smashingmag/responsive-web-design-clever-tips-and-techniques (slide 81)
+						</aside>
+					</section>
+					<section>
+						<h2>Things to consider for mobile</h2>
+						<p class="fragment">Performance</p>
+						<p class="fragment">Feedback</p>
+						<aside class="notes">	
+							Performance 
+								- When planning for responsive websites its important to consider the modern phone is equivalent to old computers
+									- (do a side by side comparison via image of an iphone 3gs and an old iMac)
+								- connections can be slow
+							Feedback!
+								- Feedback must be continuous
+								- When an interface stops moving the page is eather done or died
+						</aside>
+					</section>
+					<section>
+						<h2>When is designing in the browser a good idea?</h2>
+							<br />
+							<p class="fragment">Small Teams</p>
+							<p class="fragment">You have a Unicorn</p>
+						<aside class="notes">	
+							
+								Small teams, where you have a designer that is also front-end coder 
+
+								Or if you have a member of your team who can do front-end code and design...
+									I am guilty of thinking I can do this, but its REALLY REALLY hard to switch from one side of your brain to anouther on the fly
+						</aside>
+					</section>
+					<section>
+						<h2>When is this a crappy idea?</h2>
+							<br />
+							<p class="fragment">Your team is large enough to be specialized</p>
+							<p class="fragment">When you don't want a front-end coder making these types of decisions</p>
+							<h3 class="fragment">IT'S HARD!!!!</h3>
+						<aside class="notes">	
+							
+								Your team is large enough and specialized enough to have a dedicated designer
+								When you don't want a front-end coder making these types of decisions
+									- an example of this is when I worked at vail they let us make UX decisions while we where coding... and alought the project turned out okay, any designer could spot tons of tweeks that would have really helped.
+								Making decisions that involve both parts of your brain is vary hard!
+						</aside>
+					</section>	
+				</section>
+
+				<section>
+					<section>
+						<h1>Mini question break</h1>
+					</section>
+					<section>
+						<h2>Who had the worse drive in?</h2>
+					</section>
+					<section>
+						<h2>Does anyone do have any other coold designing in the browser tools to recommend to the group?</h2>
+					</section>
+					<section>
+						<h2>Does anyone do responsive design in a different way?</h2>
+					</section>
+				</section>	
+				<section>
+					<section>	
+						<h1>When Designers still design</h1>
+					</section>
+					<section>	
+						<h2>On a personal view</h2>
+						<img src="http://cl.ly/O7XG/Screen%20Shot%202013-04-07%20at%208.05.36%20PM.png" width="500" />
+						<p>hard mode</p>
+						<aside class="notes">
+							It takes a lot of practice for the code editor to become a place where you can make good design decisions
+						</aside>
+					</section>
+					<section>	
+						<h2>From a managment point of view...</h2>
+						<img src="http://www.energytrendsinsider.com/wp-content/uploads/2013/01/unicorn.jpg?00cfb7" width="500" />
+						<p>Look how rare it is!</p>
+						<p><small>(no excuse for designers, or front-end devs)</small></p>
+						<p><small>even if you can... mono-tasking FTW</small></p>
+						<aside class="notes">
+							- Finding someone who can code and design at the same time is super hard, expensive, and maybe not the most efficient in every situation
+							- This is not an excuse for front end developers to not learn design principals, or designers to not learn how to code. I am a pretty solid advocate for being able to do both, but all our knowledge of mono tasking says you can do a task better and faster if you do it in modular pieces. So my opinion is to do one at a time.
+						</aside>
+					</section>
+					<section>	
+						<h2>Big projects require more polish!</h2>
+						<p class="fragment">Sharing is caring</p>
+						<ul>
+							<li class="fragment">Wireframes</li>
+							<li class="fragment">Prototypes</li>
+							<li class="fragment">Designs</li>
+						</ul>
+					
+						<aside class="notes">
+							- If you want to be able to take wireframes to interested parties, investors, your mom, or anyone else to give advise, its hard to make changes after you are hours into coding the whole thing
+						</aside>
+					</section>
+					<section>	
+						<h2>Delegation of skills</h2>
+						<p class="fragment">If you can specialize roles why wouldn't you?</p>
+						<aside class="notes">
+							- if you are lucky enough to work on a team with specializations you have one team for UI and one team for development, this means each person can focus on what they are good at
+						</aside>
+					</section>
+					<section>	
+						<h2>Expandable</h2>
+						</br>
+						<p class="fragment">What if you want to go native?</p>
+						<p class="fragment"><a href="http://sixrevisions.com/mobile/responsive-web-design-not-the-future/">why responsive web design not the future</a></p>
+
+						<aside class="notes">										
+							- works for, responsive, native, adaptive, so
+								- if half way through the project you realize that responsive isn't the solution you don't break your workflow, 
+							- http://sixrevisions.com/mobile/responsive-web-design-not-the-future/
+						</aside>
+					</section>
+					<section>
+						<h2>sounds perfect</h2>
+						<h3>... well, not with photoshop</h3>
+						<br />
+						<p class="fragment">lets fire up photoshop!</p>
+						<br />
+						<ol>
+							<li class="fragment">What size should the canvas be?</li>
+							<li class="fragment">Layers?</li>
+							<li class="fragment">How do we make changes?</li>
+						</ol>
+						<br />
+						<br />
+
+						<p class="fragment">Maybe photoshop isn't our tool of choice...</p>
+						<aside class="notes">		
+
+							Problems with this method?
+								How does that work in Photoshop ?!
+									- okay now that we know we want to design our responsive website in a design tool lets fire up good old photoshop.
+										- wait... what should the screen size be?... 
+										- oh I know! we can do this with multipal layers, and a grid structure, 
+										- drats, what about changes?! or slight tweeks?
+										- maybe photoshop isn't the right tool...
+						</aside>
+					</section>
+					<section>
+						<h2>Solutions!!!</h2>
+					</section>
+					<section>
+						<h2>NEVER UNDERESTIMATE THE POWER OF PAPER!!</h2>
+						<br />
+						<p>GOALS</p>
+						<ul>
+							<li class="fragment">Get ideas down!</li>
+							<li class="fragment">Rates items on page by importance!
+								<ul>
+									<li class="fragment">Business needs</li>
+									<li class="fragment">Viewer needs</li>
+								</ul>
+							</li>
+							<li class="fragment">Consider varying screen sizes</li>
+						</ul>
+						<aside class="notes">
+							NEVER UNDERESTIMATE THE POWER OF PAPER!!
+							- lets start with the one tool that was the same in both pre-RWD and popular-RWD
+								- PAPER! -- there is a reason this is sooo popular! its the fastest way to get ideas down... 
+							- Flag your top priorities 
+								- mobile users need a quicker way to find things then a 5 layer menue.
+								- mobile users don't need the daily deals on the home page, move that to a back page
+							
+							- Consider what things you can combine to make sure it looks good, and still is navigable
+								
+						</aside>
+					</section>
+					<section>
+						<h2>okay, enough with the pen and paper,</h2>
+						<h2>lets get to the computer</h2>
+					</section>
+					<section>
+						<h2>New players to the space</h2>
+						<ul>
+							<li><a href="http://html.adobe.com/edge/reflow/">reflow</a></li>
+							<li><a href="http://uxpin.com/">uxpin</a></li>
+							<li><a href="http://www.invisionapp.com/">invision</a></li>
+						</ul>
+						<aside class="notes">
+							- New players to the space
+								- there are several new comers to the space, like
+									- http://html.adobe.com/edge/reflow/
+										- responsive layout tool!
+									- http://uxpin.com/
+										- aims to be a light weight rapid prototyping tool
+									- http://www.invisionapp.com/
+										- full featured way to do mockups and proofs of concepts
+									- http://webflow.com/
+										- responsive design tool
+									- each has their own strengths and weaknessess, but... none of these meet the requirments 100%
+						</aside>
+					</section>
+					<section>
+						<h2>Indesign</h2>
+						<img src="http://d39fx46bzv2q62.cloudfront.net/wp-content/uploads/2012/05/indesign-300x202.jpg" />
+						<p class="fragment">wait... indesign?! the thing for print right?</p>
+						<ul>
+							<li class="fragment">multiple pages</li>
+							<li class="fragment">link to photoshop elements</li>
+						</ul>
+						<aside class="notes">
+							- indesign
+								- wait... indesign?! the thing for print right?	
+									- http://www.adobe.com/products/indesign/adaptive-design-tools.html 
+									- http://www.adobe.com/products/indesign/features._sl_id-contentfilter_sl_featuredisplaytypes_sl_new.html
+									- you can use multiple pages to create your several views for different browsers
+										- then if you need an item you can link it from photoshop and make changes to all the images at once
+											- this also allows us an idea of how we will reuse elements.
+						</aside>
+					</section>
+					<section>
+						<h2>Illustrator</h2>
+						<ul>
+							<li class="fragment">Symbols</li>
+							<li class="fragment">Artboards</li>
+							<li class="fragment">Text & paragraph styles</li>
+							<li class="fragment">SVG WHAT?!</li>
+							<li class="fragment"><a href="http://www.rubbercheese.com/blog/comments/a-wireframe-template-for-responsive-web-design">template for responsive</a></li>
+						</ul>
+						<aside class="notes">
+							- illustrator
+								- symbols - allow you to create one image used in several locations.
+								- Artboards – create multiple canvas sizes side-by-side and to view different screen sizes in a single document.
+								- Text & paragraph styles – a shared feature with Photoshop, but styles in Illustrator can be exported to css using the HTML5 pack from Adobe.
+								 	- http://www.adobe.com/products/illustrator.html
+								- SVG WHAT?!
+									- pixel density is becoming a big things, and the one thing everyone is in agreement on is that vector will be coming to the browser soon. Most likely in SVG format.
+								- http://www.rubbercheese.com/blog/comments/a-wireframe-template-for-responsive-web-design
+
+						</aside>
+					</section>
+					<section>
+						<h2>So what is the go to tool?</h2>
+						<p>There is NO tool that does everything out of the box</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>BONUS STUFF?!</h1>
+					</section>
+					<section>
+						<h2>Speed Test</h2>
+						<p><a href="http://mobitest.akamai.com/m/index.cgi">MobiTest by akamai</a></p>
+					</section>
+					<section>
+						<h2>Responsive Plugins</h2>
+						<p><a href="http://tympanus.net/Development/Calendario/">Responsive calender by Codrops</a></p>
+						<p><a href="http://responsive-nav.com/">Responsive Navigation</a></p>
+					</section>
+					<section>
+						<h2>Additional Reading</h2>
+						<p><a href="http://www.responsivedesign.is/">Reading on responsive</a></p>
+						<p><a href="http://www.digby.com/mobile-statistics/">Statistics</a></p>
+					</section>
+					<section>
+						<h2>Showing it off!!!</h2>
+						<p><a href="http://ami.responsivedesign.is/?url=http%3A%2F%2Ftymerry.com%2Fresponsive%2F#">Responsive Testing by amiresponsive</a></p>
+						<p><a href="http://placeit.breezi.com/productshots/">Cool Screenshots by Breezi</a></p>
+					</section>
+					<section>
+						<h2>Compare frameworks</h2>
+						<p><a href="http://usablica.github.com/front-end-frameworks/compare.html">Usablica framework comparison</a></p>
+					</section>
+					<section>
+						<h2>cool infographics</h2>
+						<p><a href="http://designinstruct.com/roundups/infographics-learn-responsive-web-design/">Infographics</a></p>
+					</section>
+				</section>
+				<section>
+					<h1>THE END</h1>
+					<h3>questions?</h3>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
