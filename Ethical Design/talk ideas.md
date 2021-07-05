@@ -1,0 +1,1 @@
+https://www.theverge.com/2017/8/28/16213464/trump-cybersecurity-council-resign-protest-niac
